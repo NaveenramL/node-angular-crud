@@ -1,0 +1,8 @@
+<div>
+  <h2>Entities</h2>
+  <input [(ngModel)]="entityName" placeholder="Entity Name" />
+  <button (click)="addEntity()">Add Entity</button>
+  <ul>
+    <li *ngFor="let entity of entities">{{ entity.entity_name }}</li>
+  </ul>
+</div>
